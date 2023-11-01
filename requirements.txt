@@ -17,7 +17,7 @@ fastparquet<=2023.8.0
 fonttools<=4.40.0
 fsspec<=2023.10.0
 h11==0.14.0
-httptools==0.6.1
+httptools<=0.6.1
 idna==3.4
 imageio==2.31.5
 ipykernel==6.22.0
