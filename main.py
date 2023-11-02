@@ -7,10 +7,6 @@ df_funcion1 = pd.read_parquet('df_funcion1.parquet', engine='fastparquet', index
 df_funcion2 = pd.read_parquet('df_funcion2.parquet', engine='fastparquet', index=False)
 
 
-@app.get('/')
-def read_root():
-    return "Index"
-
 @app.get('/Playtime/')
 def PlayTimeGenre(genero : str ):
     df_funcion1['genres'] = df_funcion1['genres'].astype(str)
