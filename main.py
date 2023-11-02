@@ -3,12 +3,11 @@ import pandas as pd
 
 app = FastAPI()
 
-df_funcion1 = pd.read_parquet('df_funcion1.parquet', engine='fastparquet', index=False)
-df_funcion2 = pd.read_parquet('df_funcion2.parquet', engine='fastparquet', index=False)
 
 
 @app.get('/Playtime/')
 def PlayTimeGenre(genero : str ):
+    df_funcion1 = pd.read_parquet('df_funcion1.parquet', engine='fastparquet', index=False)
     df_funcion1['genres'] = df_funcion1['genres'].astype(str)
     datos = df_funcion1[df_funcion1['genres'].str.contains(genero, case=False)].head(1)
     return "Año de lanzamiento con mas horas jugadas para {} : {}".format(genero,datos.iloc[0,1])
