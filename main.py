@@ -26,9 +26,11 @@ def UserForGenre(genero : str ):
 @app.get('/recomendacion_juego/{titulo}')
 def recomendacion_juego(titulo : str) -> list:
     juego = df_recomendacion_csv[df_recomendacion_csv['title'].str.lower().str.contains(titulo, case=False)]
-    juego = juego.iloc[0,0]#['title']
+    juego = juego.iloc[0,0]
     recomendaciones=jaccard_csv[juego].sort_values(ascending=False)
-    return list(recomendaciones.index[1:6].tolist())
+    recomendaciones = list(recomendaciones.index[1:6].tolist())    
+    return recomendaciones
+
   
     
 
