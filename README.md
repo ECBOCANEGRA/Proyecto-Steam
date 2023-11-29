@@ -1,7 +1,7 @@
 # Proyecto Individual
 
 # MLOps
-![](https://github.com/ECBOCANEGRA/Proyecto-Steam/blob/main/mlops.png)
+![](https://github.com/ECBOCANEGRA/Proyecto-Steam/blob/main/img/mlops.png)
 
 # Contexto
 Se planteó la necesidad de realizar el análisis y limpieza de datos de una base de datos de Steam, una plataforma multinacional de videojuegos. Así como crear un sistema de recomendaciones de videojuegos.
@@ -10,7 +10,7 @@ Se planteó la necesidad de realizar el análisis y limpieza de datos de una bas
 Crear una api en Fastapi y deployarla en render para ser consumida
 
 # Fujo de trabajo
-![](https://github.com/ECBOCANEGRA/Proyecto-Steam/blob/main/DiagramaConceptualDelFlujoDeProcesos.png)
+![](https://github.com/ECBOCANEGRA/Proyecto-Steam/blob/main/img/DiagramaConceptualDelFlujoDeProcesos.png)
 
 # Desarrollo del proyecto
 
