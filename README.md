@@ -29,6 +29,8 @@ Las funciones que se crearon en la api son:
 Sistema de recomendación
 * def recomendacion_juego( id de producto ): Ingresando el título del juego, recibimos una lista con 5 juegos recomendados similares al ingresado.
 
+# Deploy en render
+[Link](https://steam-pi.onrender.com/docs#)
 
 # Fuente de datos
 [Dataset](https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj): Carpeta con el archivo que requieren ser procesados, tengan en cuenta que hay datos que estan anidados (un diccionario o una lista como valores en la fila).
