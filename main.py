@@ -3,10 +3,10 @@ import pandas as pd
 
 app = FastAPI()
 
-df_funcion1 = pd.read_parquet('df_funcion1.parquet', engine='fastparquet', index=False)
-df_funcion2 = pd.read_parquet('df_funcion2.parquet', engine='fastparquet', index=False)
-df_recomendacion_csv = pd.read_csv('df_recomendacion.csv')
-jaccard_csv=pd.read_csv('df_jaccard.csv', index_col='title')
+df_funcion1 = pd.read_parquet('datasets/df_funcion1.parquet', engine='fastparquet', index=False)
+df_funcion2 = pd.read_parquet('datasets/df_funcion2.parquet', engine='fastparquet', index=False)
+df_recomendacion_csv = pd.read_csv('datasets/df_recomendacion.csv')
+jaccard_csv=pd.read_csv('datasets/df_jaccard.csv', index_col='title')
 
 
 
